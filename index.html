@@ -1,0 +1,42 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Wallet</title>
+  </head>
+  <body>
+    <h1>create a phrase</h1>
+    <button>here!</button>
+    <script type="module" src="scripts.js" id="myButton"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Web Wallet</title>
+  </head>
+  <body>
+    <h1>Web Wallet</h1>
+
+    <!-- Button to generate a mnemonic phrase -->
+    <button id="generateMnemonic">Generate Mnemonic</button>
+
+    <!-- Display generated mnemonic -->
+    <p id="mnemonicDisplay">Mnemonic will appear here</p>
+
+    <!-- Button to add a new wallet -->
+    <button id="addWallet" disabled>Add Wallet</button>
+
+    <!-- List of wallets with public keys -->
+    <ul id="walletList"></ul>
+
+    <!-- Include ethers.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
+    <!-- Link to your custom JavaScript -->
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
